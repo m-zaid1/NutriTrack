@@ -1,0 +1,100 @@
+/* Apply box-sizing universally for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.login-page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f9f0;
+  padding: 40px 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.login-form {
+  background-color: white;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 500;
+}
+
+.input-group input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  background-color: white;
+  transition: border 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #1e824c;
+}
+
+.form-btn {
+  width: 100%;
+  background-color: #2e7d48;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-btn:hover {
+  background-color: #25693c;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+.footer-text span {
+  color: #2e7d48;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: #2e7d48;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Toastify fix */
+.Toastify__toast-container {
+  z-index: 9999 !important;
+}
